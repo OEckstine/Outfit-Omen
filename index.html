@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Omen</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header class="header">
+        <span class="logo">Outfit Omen</span>
+        <nav class="nav">
+        
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="title">OUTFIT OMEN</h1>
+
+        <div class="search-wrapper">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+
+            <input
+                class="search-input"
+                id="searchInput"
+                type="text"
+                placeholder="Describe your vibe or how you're feeling today..."
+            />
+
+            <button class="mic-btn" aria-label="Voice search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                    <line x1="12" y1="19" x2="12" y2="23"/>
+                    <line x1="8" y1="23" x2="16" y2="23"/>
+                </svg>
+            </button>
+        </div>
+
+        <p class="tagline">Powered by your mood</p>
+    </section>
+
+    
+    <div class="results-overlay" id="resultsOverlay">
+    <button id="closeResults">✕</button>
+    <p id="message"></p>
+    <div id="articles"></div>
+</div>
+
+    <script src="sketch.js"></script>
+
+</body>
+</html>
